@@ -39,6 +39,29 @@ import piexif
 
 warnings.filterwarnings("ignore")
 
+# 加载 .env.local 中的环境变量（如果存在）
+# 用于把敏感信息（如 WEIBO_COOKIE）从 config.json 中分离出来，
+# .env.local 由 .gitignore 排除，不会提交到仓库
+def _load_env_local():
+    env_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], ".env.local")
+    if not os.path.isfile(env_path):
+        return
+    try:
+        with open(env_path, encoding="utf-8") as f:
+            for raw in f:
+                line = raw.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, _, value = line.partition("=")
+                key = key.strip()
+                value = value.strip().strip('"').strip("'")
+                if key:
+                    os.environ.setdefault(key, value)
+    except Exception:
+        pass
+
+_load_env_local()
+
 # 如果日志文件夹不存在，则创建
 if not os.path.isdir("log/"):
     os.makedirs("log/")
@@ -3387,7 +3410,7 @@ class Weibo(object):
                     if self.anti_ban_enabled:
                         self.check_batch_delay()
 
-                    if page % 20 == 0:  # 每爬20页写入一次文件
+                    if page % 5 == 0:  # 每爬5页写入一次文件
                         self.write_data(wrote_count)
                         wrote_count = self.got_count
 
