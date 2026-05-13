@@ -1,0 +1,39 @@
+{
+  "task": "A - MPV 比稿",
+  "window": {
+    "start": "2025-11-12",
+    "end": "2026-05-12"
+  },
+  "combos": [
+    {
+      "label": "岚图_梦想家",
+      "uid": "7351024207",
+      "query": "梦想家",
+      "ok": true,
+      "elapsed_sec": 123
+    },
+    {
+      "label": "腾势_D9",
+      "uid": "2664689831",
+      "query": "D9",
+      "ok": true,
+      "elapsed_sec": 135
+    },
+    {
+      "label": "别克_GL8",
+      "uid": "1667553532",
+      "query": "GL8",
+      "ok": true,
+      "elapsed_sec": 33
+    },
+    {
+      "label": "魏牌_高山",
+      "uid": "6055831093",
+      "query": "高山",
+      "ok": true,
+      "elapsed_sec": 374
+    }
+  ],
+  "total_elapsed_sec": 756,
+  "finished_at": "2026-05-12T18:53:37.139656"
+}

@@ -1,19 +1,24 @@
 """
 蔚来微博一年用户运营动作分析
-输入: weibo_data/蔚来/5675889356.json (1143 条微博)
+输入: <repo>/weibo_data/蔚来/5675889356.json (1143 条微博)
 输出:
-  - weibo_data/蔚来_用户运营分析报告.md
-  - weibo_data/蔚来_分类明细.csv
+  - 蔚来_用户运营分析报告.md (脚本同目录)
+  - 蔚来_分类明细.csv (脚本同目录)
 """
 import json
+import os
 import re
 from collections import Counter, defaultdict
 from datetime import datetime
 import csv as csvlib
 
-JSON_PATH = "weibo_data/蔚来/5675889356.json"
-REPORT_PATH = "weibo_data/蔚来_用户运营分析报告.md"
-DETAIL_CSV = "weibo_data/蔚来_分类明细.csv"
+# 脚本位于 analysis_nio/，项目根在上一级
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
+JSON_PATH = os.path.join(REPO_ROOT, "weibo_data", "蔚来", "5675889356.json")
+REPORT_PATH = os.path.join(SCRIPT_DIR, "蔚来_用户运营分析报告.md")
+DETAIL_CSV = os.path.join(SCRIPT_DIR, "蔚来_分类明细.csv")
 
 # ============================================================
 # 1) 运营动作分类规则（基于关键词，多标签）
@@ -426,9 +431,9 @@ P("---")
 P("")
 P("## 附录")
 P("")
-P(f"- 详细分类明细 CSV：[蔚来_分类明细.csv]({DETAIL_CSV.split('/')[-1]})（{len(weibos)} 行，含每条微博的标签/正文摘要/互动数据）")
-P(f"- 完整 JSON 数据：[5675889356.json](蔚来/5675889356.json)（1.5 MB）")
-P(f"- 完整 Markdown 数据：[蔚来/](蔚来/)（按月归档，每天一个 md 文件）")
+P(f"- 详细分类明细 CSV：[蔚来_分类明细.csv]({os.path.basename(DETAIL_CSV)})（{len(weibos)} 行，含每条微博的标签/正文摘要/互动数据）")
+P(f"- 完整 JSON 数据：[5675889356.json](../weibo_data/蔚来/5675889356.json)（1.5 MB）")
+P(f"- 完整 Markdown 数据：[../weibo_data/蔚来/](../weibo_data/蔚来/)（按月归档，每天一个 md 文件）")
 P("")
 P("**分析方法说明**：")
 P("- 运营动作分类基于关键词规则匹配，多标签（一条微博可属多类）")

@@ -1,0 +1,46 @@
+{
+  "task": "B - 中大型SUV PHEV 比稿",
+  "window": {
+    "start": "2025-11-12",
+    "end": "2026-05-12"
+  },
+  "combos": [
+    {
+      "label": "岚图_泰山",
+      "uid": "7351024207",
+      "query": "泰山",
+      "ok": true,
+      "elapsed_sec": 329
+    },
+    {
+      "label": "AITO_M8",
+      "uid": "7711487956",
+      "query": "M8",
+      "ok": true,
+      "elapsed_sec": 30
+    },
+    {
+      "label": "理想_L8",
+      "uid": "6001272153",
+      "query": "L8",
+      "ok": true,
+      "elapsed_sec": 31
+    },
+    {
+      "label": "小鹏_GX",
+      "uid": "5710264970",
+      "query": "GX",
+      "ok": true,
+      "elapsed_sec": 414
+    },
+    {
+      "label": "极氪_8X",
+      "uid": "7576049404",
+      "query": "8X",
+      "ok": true,
+      "elapsed_sec": 258
+    }
+  ],
+  "total_elapsed_sec": 1184,
+  "finished_at": "2026-05-12T20:04:51.101379"
+}

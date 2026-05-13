@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-05-12",
+  "window": {
+    "start": "2025-11-12",
+    "end": "2026-05-12"
+  },
+  "brand_accounts": {
+    "岚图汽车": {
+      "uid": "7351024207",
+      "screen_name": "岚图汽车",
+      "followers": "42万",
+      "verified_reason": "智慧岚图 成就幸福"
+    },
+    "腾势汽车": {
+      "uid": "2664689831",
+      "screen_name": "腾势汽车",
+      "followers": "68.9万",
+      "verified_reason": "腾势汽车是面向全球打造的科技安全新豪华汽车品牌"
+    },
+    "别克": {
+      "uid": "1667553532",
+      "screen_name": "别克",
+      "followers": "100.1万",
+      "verified_reason": "历喧哗 跃新境"
+    },
+    "魏牌": {
+      "uid": "6055831093",
+      "screen_name": "魏牌",
+      "followers": "158.4万",
+      "verified_reason": "WEY美好生活"
+    },
+    "智界汽车": {
+      "uid": "7861851237",
+      "screen_name": "智界汽车",
+      "followers": "49.8万",
+      "verified_reason": "智界汽车官方微博"
+    }
+  },
+  "hit_summary": {
+    "岚图汽车/梦想家": {
+      "uid": "7351024207",
+      "query": "梦想家",
+      "sample_total": 30,
+      "sample_in_window": 30,
+      "note": "内容充沛，半年命中率 100%"
+    },
+    "腾势汽车/D9": {
+      "uid": "2664689831",
+      "query": "D9",
+      "sample_total": 30,
+      "sample_in_window": 30,
+      "note": "内容充沛，注意 5/4 第二代腾势D9 上市预热"
+    },
+    "别克/GL8": {
+      "uid": "1667553532",
+      "query": "GL8",
+      "sample_total": 30,
+      "sample_in_window": 11,
+      "note": "命中率偏低 11/30,但 GL8 是长青车型,半年内估计 50-100 条,够分析"
+    },
+    "魏牌/高山": {
+      "uid": "6055831093",
+      "query": "高山",
+      "sample_total": 29,
+      "sample_in_window": 29,
+      "note": "内容充沛,样本均为魏牌高山/高山V9X,无误命中"
+    },
+    "智界汽车/V9": {
+      "uid": "7861851237",
+      "query": "V9",
+      "sample_total": 30,
+      "sample_in_window": 30,
+      "note": "智界V9是 2026-05-15 即将发布的新车,半年内容集中在 4-5 月预热阶段,可能仅 50-80 条但战略意义大"
+    }
+  }
+}
